@@ -1,0 +1,10 @@
+/* Changing default body design */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main calculation section styles */
+.main{
+    margin: auto 8%;
+}
