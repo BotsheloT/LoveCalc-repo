@@ -56,21 +56,19 @@ let text = `${you}loves${them}`;
 
 let chars = [];
 
-let position = 0;
-
 let count = 0;
 
-while(position < text.length-1){
-    count = 0;
-    let focus = text.position;
+while(text.length > 0){    
+    let focus = text[0];
 
     for(let i = 0; i < text.length-1; i++){
         if(text[i] == focus){
+            text = text.substring(i, 1);
             count++;            
         }
     }
     chars.push(count);
-    position++;
+    count = 0;    
 }
 
-console.log(position);
+console.log(chars);
