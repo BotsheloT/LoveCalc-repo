@@ -1,6 +1,6 @@
-//Variables for names
-let you = 'Ken';
-let them = 'Kim';
+/* //Variables for names
+let you = 'Botshelo';
+let them = 'Thando';
 
 //Function for love calculator
 const loveCalc = (name1, name2) =>{
@@ -16,10 +16,61 @@ const loveCalc = (name1, name2) =>{
 
         for (let i = 0; i < test.length-1; i++){     
             let that = test[i];
-            if (test  === that){
+            if (test[i]  === that){
                 reps++;                
             }
         }
     }
 
+} */
+
+/* //Variables for names
+let you = 'botshelo';
+let them = 'thando';
+
+//Array for numbers
+let chars = [];
+
+//Test string
+let text = `${you}loves${them}`;
+
+for(let i = 0; i < text.length; i++){
+    let tot = 0;
+    let test = text[i];
+    tot++;
+    for(let j = 0; j < text.length; j++){
+        if(text[i] == text[j+1]){
+            tot++;
+            text = text.substring(j, 1);
+        }    
+    }
+    chars[i] = tot; 
 }
+
+console.log(chars); */
+
+let you = 'botshelo';
+let them = 'thando'
+
+let text = `${you}loves${them}`;
+
+let chars = [];
+
+let position = 0;
+
+let count = 0;
+
+while(position < text.length-1){
+    count = 0;
+    let focus = text.position;
+
+    for(let i = 0; i < text.length-1; i++){
+        if(text[i] == focus){
+            count++;            
+        }
+    }
+    chars.push(count);
+    position++;
+}
+
+console.log(position);
